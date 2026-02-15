@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(water.png);
+
+        }
+        .nav-bar {
+            background-color: #310606;
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+        .nav-bar nav a {
+            color: blueviolet;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            justify-content: left;
+            align-content: center;
+        }
+        .nav-bar nav a:hover {
+            text-decoration: underline;
+            color: gold;
+        }
+        h1{
+            color: blueviolet;
+        }
+        .contact{
+            background-color: #fff;
+            padding: 20px;
+            width:  300px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        button:hover{
+            background-color: rgb(105, 97, 50);
+            transition: 1s;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <nav>
+            <h1>GitHub commands</h1><br>
+            <center>
+            <a href="home.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="about.html">About</a>
+            </center>
+        </nav>
+    </div>
+
+    <section>
+        <center>
+        <div class="contact">
+            <h2>Contact</h2>
+            Full Name: <br>
+            <input type="text" value=""> <br><br>
+            Email: <br>
+            <input type="email" value=""><br><br>
+            Phone Number: <br>
+            <input type="text" value=""><br><br>
+            Your Message: <br>
+            <textarea name="Your message" id="message"></textarea><br><br>
+           <button type="submit">Send Message</button>
+        </div>
+        </center>
+    </section>
+</body>
+</html>

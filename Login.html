@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(pic.png);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-box {
+            background-color: #fff;
+            padding: 20px;
+            width:  300px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+     button:hover{
+         background-color: gold;
+         color: blueviolet;
+         transition: 1s;
+         box-shadow: black 0px 0px 10px;
+        }
+            button{
+                background-color: black;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 100%;
+            color: black;
+            }
+        </style>
+</head>
+<body>
+    
+    <div class="form-box">
+        <h1>Login Form</h1>
+        <form action="/login" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button><a href="home.html">submit</a></button>
+        </form>
+        <br> <br>
+       <p> If you don't have an account,PLEASE</p> <button><a href="signup.html">SIGN UP</a></button>
+    </div>
+       
+</body>
+</html>
